@@ -6,6 +6,92 @@ body {
     background-color: rgb(26, 28, 23);
 }
 
+header {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+    gap: 35px;
+    border-bottom: 2px solid;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(26, 28, 23);
+}
+
+nav svg {
+    width: 25px;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: darkgreen;
+}
+
+main {
+    margin: 15px 20px;
+    gap: 20px;
+    display: flex;
+    align-items: stretch;
+}
+
+article {
+    background-color: rgb(68, 73, 61);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px 15px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+aside {
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+    height: fit-content;
+    background-color: rgb(68, 73, 61);
+    padding: 1px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: aliceblue;
+    border-radius: 10px;
+    flex: 0 0 20%;
+}
+
+aside p {
+    color: rgb(203, 203, 203);
+}
+
+aside hr {
+    border: 1px solid rgb(26, 28, 23);
+    width: 100%;
+    margin: 10px 0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    margin: 20px;
+    padding: 0px 10px;
+    color: white;
+    background-color: rgb(68, 73, 61);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
 ::-moz-selection {
     color: rgb(68, 73, 61);
     background: rgb(40, 51, 51);
@@ -22,12 +108,6 @@ hr {
     margin: 10px;
 }
 
-aside hr {
-    border: 1px solid rgb(26, 28, 23);
-    width: 100%;
-    margin: 10px 0px;
-}
-
 a {
     color: green;
     transition: all .5s;
@@ -35,12 +115,6 @@ a {
 
 a:hover {
     color: darkgreen;
-}
-
-header {
-    height: 130px;
-    display: flex;
-    justify-content: center;
 }
 
 .flex-container {
@@ -90,13 +164,6 @@ header {
     border-radius: 10px 10px 0 0;
     pointer-events: none;
     object-fit: cover;
-}
-
-main {
-    margin: 15px 20px;
-    gap: 20px;
-    display: flex;
-    align-items: stretch;
 }
 
 input {
@@ -159,23 +226,6 @@ input:focus {
     flex: 1;
 }
 
-aside {
-    position: sticky;
-    top: 70px;
-    z-index: 1;
-    height: fit-content;
-    background-color: rgb(68, 73, 61);
-    padding: 1px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: aliceblue;
-    border-radius: 10px;
-    flex: 0 0 20%;
-}
-
-aside p {
-    color: rgb(203, 203, 203);
-}
-
 .reviews {
     display: flex;
     gap: 10px;
@@ -191,44 +241,6 @@ aside p {
 
 .reviews a:hover {
     text-decoration: underline;
-}
-
-article {
-    background-color: rgb(68, 73, 61);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1px 15px;
-    color: aliceblue;
-    border-radius: 10px;
-}
-
-nav {
-    justify-content: center;
-    display: flex;
-    padding: 15px;
-    gap: 35px;
-    border-bottom: 2px solid;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: rgb(26, 28, 23);
-}
-
-nav svg {
-    width: 25px;
-    display: flex;
-}
-
-nav a {
-    color: white;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: .5s;
-}
-
-nav a:hover {
-    color: darkgreen;
 }
 
 #current {
@@ -250,18 +262,6 @@ nav a:hover {
 
 .logo img:hover {
     transform: scale(1.2) rotate(5deg);
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    font-size: 14px;
-    margin: 20px;
-    padding: 0px 10px;
-    color: white;
-    background-color: rgb(68, 73, 61);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
 }
 
 textarea {
@@ -369,10 +369,28 @@ button[type="submit"]:hover {
     width: 300px;
     height: 200px;
 }
+
 .trailer {
     gap: 20px;
     display: flex;
     flex-direction: row;
+}
+
+.bron {
+    position: absolute;
+    margin: 270px 30px;
+}
+
+.cls-1 {
+    fill: #e87c1e;
+}
+
+.cls-2 {
+    fill: #004990;
+}
+
+.cls-3 {
+    fill: #fff;
 }
 
 @media screen and (max-width: 800px) {
@@ -442,6 +460,12 @@ button[type="submit"]:hover {
 
     .acteur-container:first-child {
         margin-bottom: 20px;
+    }
+
+    .bron {
+        position: unset;
+        margin: 0px;
+        text-align: center;
     }
 
     footer {
